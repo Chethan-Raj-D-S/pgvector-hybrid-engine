@@ -1,0 +1,44 @@
+[
+  {
+    "id": "doc_agent_1",
+    "title": "Agent State Graph Orchestration & Checkpointing",
+    "content": "State graphs represent agent execution as a directed cyclic graph (DCG). Nodes encapsulate LLM calls or deterministic functions, while edges define conditional routing. Checkpointing persists state snapshots at each superstep, enabling pause-and-resume, time-travel replay, and human-in-the-loop review.",
+    "metadata": { "category": "ai_agents", "framework": "langgraph" }
+  },
+  {
+    "id": "doc_agent_2",
+    "title": "Model Context Protocol (MCP) Standard for Tool Integration",
+    "content": "Model Context Protocol (MCP) provides universal client-server interoperability for AI agents to discover, authenticate with, and invoke external enterprise tools and databases over stdio or SSE transports.",
+    "metadata": { "category": "ai_agents", "standard": "mcp" }
+  },
+  {
+    "id": "doc_pg_1",
+    "title": "PostgreSQL 16 pgvector HNSW Index Tuning",
+    "content": "In PostgreSQL 16 with pgvector, HNSW (Hierarchical Navigable Small World) indexes provide 95%+ recall on dynamic updates without needing index rebuilds. Key configuration parameters include m=16, ef_construction=64, and runtime parameter SET hnsw.ef_search = 40 for tuning latency versus recall trade-offs.",
+    "metadata": { "category": "database", "engine": "postgresql" }
+  },
+  {
+    "id": "doc_pg_2",
+    "title": "Postgres Error Code ERR_PG_40012: Lock Timeout in High Concurrency",
+    "content": "Error code ERR_PG_40012 indicates an exclusive lock acquisition timeout during high concurrency transactions on partitioned tables. Resolution requires tuning lock_timeout and using advisory locks for optimistic concurrency control.",
+    "metadata": { "category": "database", "error_code": "ERR_PG_40012" }
+  },
+  {
+    "id": "doc_sec_1",
+    "title": "256-Route Application Security Audit & OWASP Top 10",
+    "content": "The 256-route API security audit evaluated endpoints against OWASP API Top 10 vulnerabilities, specifically closing Broken Object Level Authorization (BOLA) and enforcing strict role-based access control (RBAC).",
+    "metadata": { "category": "security", "scope": "appsec" }
+  },
+  {
+    "id": "doc_sec_2",
+    "title": "Indian DPDP Act 2023 & GDPR Compliance Framework",
+    "content": "Compliance under the Digital Personal Data Protection (DPDP) Act 2023 and GDPR requires purpose limitation, explicit consent capture, verifiable right-to-erasure workflows, and masking of personally identifiable information (PII) before external model dispatch.",
+    "metadata": { "category": "compliance", "regulation": "dpdp" }
+  },
+  {
+    "id": "doc_fin_1",
+    "title": "Financial Multi-Way Transaction Reconciliation & Intellimatch",
+    "content": "High-throughput reconciliation architectures implemented for tier-1 banks (ABN AMRO, Royal Bank of Canada) handle 1:1, 1:N, and N:M settlements, isolating out-of-proof transactions and maintaining mathematical double-entry ledger invariants.",
+    "metadata": { "category": "fintech", "system": "intellimatch" }
+  }
+]
